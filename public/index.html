@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="js/vendors-node_modules_slick-carousel_slick_slick_js.js"></script><script defer src="js/index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__container">
+          <div class="header__logo">
+            <span class="material-icons jumbo">pin</span>
+            <div class="ap-bar"></div>
+            <p class="">Michael Szyszko</p>
+          </div>
+
+          <div class="header__nav">
+            <button
+              class="header__nav-toggle navbar-toggle"
+              data-target="#header-nav"
+            >
+              <span class="material-icons xl"> menu_open </span>
+            </button>
+            <div class="navbar active" id="header-nav">
+              <a href="#about" class="navbar__link">
+                <span class="material-icons lg"> rocket </span>
+                <span class="navbar__link-text">About</span>
+              </a>
+              <a href="#portfolio" class="navbar__link">
+                <span class="material-icons lg"> photo_size_select_large </span>
+                <span class="navbar__link-text">Portfolio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="home-hero-section section">
+        <div class="section__underlay"></div>
+        <div class="section__underlay2"></div>
+        <div class="home-hero">
+          <div class="home-hero__container">
+            <div class="home-hero__wrapper">
+              <div class="home-hero__slider">
+                <!-- SLIDE ONE -->
+                <div class="hero-slide">
+                  <img
+                    class="hero-slide__image"
+                    src="./assets/landscape-3.jpg"
+                    alt="Landscape One"
+                  />
+                  <div class="home-hero__overlay"></div>
+                  <div class="home-hero__overlay2"></div>
+
+                  <div class="hero-slide__panel hero-panel">
+                    <div class="hero-panel__container">
+                      <div class="hero-panel__wrapper" data-aos="fade-right">
+                        <div class="hero-panel__content">
+                          <p class="hero-panel__title">Security First</p>
+                          <p class="hero-panel__body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aut voluptatum nesciunt iure optio maxime.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SLIDE TWO -->
+                <div class="hero-slide">
+                  <div class="home-hero__overlay"></div>
+                  <div class="home-hero__overlay2"></div>
+
+                  <img
+                    class="hero-slide__image"
+                    src="./assets/landscape-2.jpg"
+                    alt="Landscape Two"
+                  />
+                  <div class="hero-slide__panel">
+                    <div class="hero-panel__container">
+                      <div class="hero-panel__wrapper" data-aos="fade-right">
+                        <div class="hero-panel__content">
+                          <p class="hero-panel__title">Test-Driven Approach</p>
+                          <p class="hero-panel__body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aut voluptatum nesciunt iure optio maxime.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SLIDE THREE -->
+                <div class="hero-slide">
+                  <div class="home-hero__overlay"></div>
+                  <div class="home-hero__overlay2"></div>
+
+                  <img
+                    class="hero-slide__image"
+                    src="./assets/landscape-1.jpg"
+                    alt="Landscape Three"
+                  />
+                  <div class="hero-slide__panel">
+                    <div class="hero-panel__container">
+                      <div class="hero-panel__wrapper" data-aos="fade-right">
+                        <div class="hero-panel__content">
+                          <p class="hero-panel__title">CLEAN Code Application</p>
+                          <p class="hero-panel__body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="home-hero__controls"></div> -->
+            </div>
+          </div>
+
+          <div class="home-hero__begin">
+            <button class="btn-bones begin-button">
+              <span class="material-icons jumbo"> expand_circle_down </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-about-section" data-aos="fade-up">
+        <div class="home-about">
+          <div class="section-container home-about__container">
+            <div class="home-about__wrapper">
+              <div class="home-about__content">
+                <div class="section-heading">
+                  <div>
+                    <p class="text__body-over text-accent-200 text-center lg:text-left">About me</p>
+                    <p class="section-heading__title">Full-Stack Developer.</p>
+                  </div>
+                </div>
+                <p class="text__body-xl">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellendus eos sunt veniam nulla officiis accusamus ullam
+                  illum doloribus cupiditate, dignissimos dolore vitae vero sint
+                  consequatur et err. Aliquid, optio accusamus. Lorem ipsum
+                  dolor sit amet consectetur, adipisicing elit. Molestias dolore
+                  fugiat, obcaecati earum et repellendus soluta minima, facilis
+                  similique possimus suscipit.
+                </p>
+                <a href="/" class="btn-primary-lg">
+                  <span> Resume </span>
+                  <span class="material-icons"> download </span>
+                </a>
+              </div>
+              <div class="home-about__image about-image">
+                <img
+                  class="about-image__img"
+                  src="./assets/about.png"
+                  alt="Michael"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <section class="home-portfolio-section section">
+          <div class="home-portfolio">
+            <div class="section-container home-portfolio__container">
+              <div class="home-portfolio__wrapper">
+                <div class="home-portfolio__content">
+                  <div class="section-heading home-portfolio__heading">
+                    <span class="material-icons jumbo">
+                      photo_size_select_large
+                    </span>
+                    <div class="ap-bar"></div>
+                    <p class="section-heading__title">My Work</p>
+                  </div>
+
+                  <div class="home-portfolio__grid" data-aos="fade-up">
+                    <div class="project">
+                      <div class="project__hitbox">
+                        <img
+                          src="./assets/landscape-2.jpg"
+                          class="project__img"
+                          alt="Project One"
+                        />
+                        <p class="project__title">Project One</p>
+                        <a href="/" class="btn-bones project__link">View</a>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="project__hitbox">
+                        <img
+                          src="./assets/landscape-3.jpg"
+                          class="project__img"
+                          alt="Project Two"
+                        />
+                        <p class="project__title">Project Two</p>
+                        <a href="/" class="btn-bones project__link">View</a>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="project__hitbox">
+                        <img
+                          src="./assets/landscape-1.jpg"
+                          class="project__img"
+                          alt="Project Three"
+                        />
+                        <p class="project__title">Project Three</p>
+                        <a href="/" class="btn-bones project__link">View</a>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div class="project__hitbox">
+                        <img
+                          src="./assets/tech2.jpg"
+                          class="project__img"
+                          alt="Project Four"
+                        />
+                        <p class="project__title">Project Four</p>
+                        <a href="/" class="btn-bones project__link">View</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-skills-section section">
+          <div class="home-skills">
+            <div class="section-container home-skills__container">
+              <div class="home-skills__wrapper">
+                <div class="home-skills__content">
+                  <div class="home-skills__bars">
+                    <div class="section-heading home-skills__heading">
+                      <p class="section-heading__title">
+                        Skills & Technologies
+                      </p>
+                    </div>
+                    <div class="home-skills__content-wrapper">
+                      <div class="ap-bars">
+                        <div
+                          class="ap-bars__item"
+                          data-percent="83"
+                          data-value="83%"
+                        >
+                          <p class="ap-bars__title">javascript</p>
+                          <div class="ap-bars__item-wrapper">
+                            <div class="ap-bars__bar bar">
+                              <span class="bar__value"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="ap-bars__item"
+                          data-percent="95"
+                          data-value="95%"
+                        >
+                          <p class="ap-bars__title">c#</p>
+                          <div class="ap-bars__item-wrapper">
+                            <div class="ap-bars__bar bar">
+                              <span class="bar__value"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="ap-bars__item"
+                          data-percent="78"
+                          data-value="78%"
+                        >
+                          <p class="ap-bars__title">python</p>
+                          <div class="ap-bars__item-wrapper">
+                            <div class="ap-bars__bar bar">
+                              <span class="bar__value"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="ap-bars__item"
+                          data-percent="98"
+                          data-value="98%"
+                        >
+                          <p class="ap-bars__title">sql</p>
+                          <div class="ap-bars__item-wrapper">
+                            <div class="ap-bars__bar bar">
+                              <span class="bar__value"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <a href="https://ca.linkedin.com/in/michael-szyszko" class="btn-primary-lg text-gs-50">
+                      <span class="material-icons">
+                        list_alt
+                      </span>
+                      <p class="">View Education</p>
+                    </a>
+                  </div>
+                  <div class="home-skills__certs certs">
+                    <div class="section-heading home-skills__heading">
+                      <p class="w-full text__body-over text-accent-200 text-center" >
+                        Certs & Lisc.
+                      </p>
+                    </div>
+                    <div class="certs__grid">
+                      <div class="certs__item">
+                        <img src="./assets/cert-1.png" alt="Certificate 1" />
+                      </div>
+                      <div class="certs__item">
+                        <img src="./assets/cert-2.png" alt="Certificate 1" />
+                      </div>
+                      <div class="certs__item">
+                        <img src="./assets/cert-3.png" alt="Certificate 1" />
+                      </div>
+                      <div class="certs__item">
+                        <img src="./assets/cert-4.png" alt="Certificate 1" />
+                      </div>
+                      <div class="certs__item">
+                        <img src="./assets/cert-5.png" alt="Certificate 1" />
+                      </div>
+                      <div class="certs__item">
+                        <img src="./assets/cert-6.png" alt="Certificate 1" />
+                      </div>
+                      <div class="certs__item">
+                        <img src="./assets/cert-7.png" alt="Certificate 1" />
+                      </div>
+                    </div>
+                    <div class="cta">
+                    <a href="https://ca.linkedin.com/in/michael-szyszko" class="btn-primary-lg text-gs-50">
+                      <span class="material-icons">
+                        list_alt
+                      </span>
+                      <p class="">Details</p>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="home-employment-section section">
+        <div class="home-employment">
+          <div class="section-container home-employment__container">
+            <div class="home-employment__wrapper">
+              <div class="home-employment__content"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
