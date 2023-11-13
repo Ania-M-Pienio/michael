@@ -170,6 +170,12 @@
   .btn-accent-lg {
     @apply bg-accent-100 text__body-lg text-gs-800 px-6 py-4 flex items-center justify-center gap-3 rounded hover:bg-slate-300;
   }
+  .btn-chip {
+    @apply min-w-[130px] bg-accent-100 hover:bg-slate-300 text__body-lg text-gs-800 px-6 py-4 flex items-center justify-center gap-3 rounded-full ;
+    &.dark {
+      @apply bg-slate-700 hover:bg-slate-600 text__body-lg text-gs-50;
+    }
+  }
 }
 
 body {

@@ -68,13 +68,14 @@
     @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-16 xl:gap-20 text-gs-700;
   }
 
-  &__bars {
+  &__content-wrapper {
+    @apply flex flex-row flex-wrap items-stretch gap-6;
+  }
+
+  &__langs {
     @apply col-span-1 xl:col-span-3 flex flex-col items-stretch gap-16;
   }
 
-  .ap-bars {
-    @apply border-t border-b;
-  }
 
   &__certs {
     @apply col-span-1 xl:col-span-2;
