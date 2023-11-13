@@ -1,0 +1,21 @@
+.footer {
+    @apply bg-gs-800 py-28 text-gs-100;
+    &__container {
+        @apply ap-container;
+    }
+    &__grid {
+        @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-16 gap-x-12;
+    }
+    .footer-section {
+        @apply flex flex-col gap-10 last:md:col-span-2 last:xl:col-span-1;
+        &__title {
+            @apply flex items-stretch gap-3 text-white text__title bold;
+        }
+        &__content {
+            @apply flex flex-col items-stretch gap-3;
+        }
+    }
+    &__link {
+        @apply text__body hover:underline;
+    }
+}

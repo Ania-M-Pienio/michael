@@ -1,0 +1,21 @@
+.header {
+    @apply w-full max-w-[100vw] relative z-10;
+    &__content {
+      @apply w-full h-auto text-gs-700 py-6 bg-white;
+    }
+    &__container {
+      @apply ap-container flex items-center justify-between gap-4 xl:gap-12;
+    }
+    &__nav {
+      @apply relative flex justify-end;
+    }
+    &__nav-toggle {
+      @apply block lg:hidden hover:text-accent-600;
+    }
+    &__logo {
+      @apply flex items-center gap-3 whitespace-nowrap text__title-xs font-bold;
+      @media (min-width: 1024px) {
+        @apply text__title-lg;
+      }
+    }
+  }

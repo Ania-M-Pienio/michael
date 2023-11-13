@@ -1,7 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+@import "./navbar.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./about.css";
+@import "./skills.css";
+@import "./work.css";
+@import "./footer.css";
+
+/* sans */
 @font-face {
   font-family: "Sans";
   src: url("./assets/Roboto-Light.ttf") format("truetype");
@@ -57,7 +66,7 @@
     url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
 
-@layer base {
+@layer components {
   .text {
     &__body {
       @apply font-sans text-base font-normal leading-7;
@@ -87,12 +96,21 @@
 
     &__title-xs {
       @apply font-brand text-base font-medium;
-    }
-    &__title {
-      @apply font-brand text-2xl font-medium;
+      &.bold {
+        @apply font-bold;
+      }
     }
     &__title-sm {
       @apply font-brand text-xl font-medium;
+      &.bold {
+        @apply font-bold;
+      }
+    }
+    &__title {
+      @apply font-brand text-2xl font-medium;
+      &.bold {
+        @apply font-bold;
+      }
     }
     &__title-md {
       @apply font-brand text-2xl font-medium;
@@ -154,8 +172,6 @@
   }
 }
 
-/* sans */
-
 body {
   @apply font-sans;
 }
@@ -202,6 +218,7 @@ body {
     font-size: 48px;
   }
 }
+html{scroll-behavior:smooth}
 
 .slick-slider {
   overflow: hidden;
@@ -214,38 +231,13 @@ body {
   display: flex;
 }
 
-.ap-bars {
-  @apply flex flex-col justify-start items-stretch gap-6 py-8;
-  &__item {
-    @apply flex justify-start gap-8 items-center;
-  }
-
-  &__item-wrapper {
-    @apply border border-gs-200 w-[75%] lg:w-[72%] xl:w-[78%];
-  }
-  &__bar {
-    @apply px-4 flex items-center relative h-[40px];
-  }
-  &__title {
-    @apply flex-1 text__body-sm uppercase;
-    @screen xl {
-      @apply text__body-lg;
-    }
-  }
-  .bar {
-    @apply bg-gradient-to-r from-secondary-500 to-fuchsia-300;
-    &__value {
-      @apply text-gs-50 text__body font-bold;
-    }
-  }
-}
 
 .main {
-  @apply flex flex-col items-stretch gap-40 lg:gap-80 overflow-hidden;
+  @apply flex flex-col items-stretch overflow-hidden;
 }
 
 .section {
-  @apply relative;
+  @apply py-40 xl:py-56 relative;
   &__underlay,
   &__underlay2 {
     @apply absolute top-0 left-0 z-[-1] w-full h-full;
@@ -263,12 +255,13 @@ body {
 .section-container {
   @apply ap-container;
 }
+
 .section-heading {
   @apply flex items-center gap-5;
   &__title {
-    @apply text__title-xl text-center text-gs-700;
+    @apply text__title-xl text-gs-700;
     @screen lg {
-      @apply text__title-2xl text-left;
+      @apply text__title-2xl;
     }
   }
   &.light {
@@ -278,240 +271,8 @@ body {
   }
 }
 
-.header {
-  @apply w-full max-w-[100vw] relative z-10;
-  &__content {
-    @apply w-full h-auto text-gs-700 py-6 bg-white;
-  }
-  &__container {
-    @apply ap-container flex items-center justify-between gap-4 xl:gap-12;
-  }
-  &__nav {
-    @apply relative flex justify-end;
-  }
-  &__nav-toggle {
-    @apply block lg:hidden hover:text-accent-600;
-  }
-  &__logo {
-    @apply flex items-center gap-3 whitespace-nowrap text__title-xs font-bold;
-    @media (min-width: 1024px) {
-      @apply text__title-lg;
-    }
-  }
-}
 
-.navbar {
-  @apply pointer-events-none absolute z-[-1] top-0 right-0 flex flex-col lg:flex-row justify-end gap-y-6 gap-x-8 py-12 lg:py-0 opacity-0;
-  transition: opacity 0.7s, top 0.7s;
-  &.active {
-    @apply opacity-100 top-[150%] z-0 pointer-events-auto;
-  }
 
-  &__link {
-    @apply btn-bones text__body-lg font-medium hover:text-accent-600 justify-end lg:justify-center;
-  }
-}
 
-@screen <lg {
-  .navbar {
-    @apply pl-8 text-gs-50;
-    .navbar__link {
-      @apply text__body-2xl hover:text-accent-200;
-    }
-    .ap-bar {
-      @apply hidden;
-    }
-  }
-}
-@screen lg {
-  .navbar {
-    @apply static top-full pointer-events-auto;
-    display: static !important;
-    opacity: 1 !important;
-  }
-}
 
-.home-hero-section {
-  filter: drop-shadow(0px 0px 3px #858585d0);
-}
 
-.home-hero {
-  @apply relative;
-  @screen lg {
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
-  }
-
-  &__begin {
-    @apply absolute z-40 bottom-0 w-full h-auto flex justify-center items-center transition-all duration-700 py-7 hover:bg-primary-100/20 hover:py-4;
-    .begin-button {
-      @apply text-gs-100 hover:text-accent-200;
-    }
-  }
-
-  &__overlay,
-  &__overlay2 {
-    @apply absolute top-0 left-0 z-10 w-full h-full;
-  }
-
-  &__overlay {
-    @apply bg-gradient-to-bl lg:bg-gradient-to-b from-primary-500  to-secondary-500 opacity-40;
-  }
-  &__overlay2 {
-    @apply z-30 bg-gradient-to-bl lg:bg-gradient-to-b from-gs-900 via-gs-900 to-primary-900 opacity-70 md:opacity-60;
-  }
-
-  &__slider {
-    @apply relative z-0;
-  }
-
-  .hero-slide {
-    @apply relative w-full h-auto max-h-[80vh] aspect-portrait sm:aspect-short-portrait lg:aspect-tall-landscape 3xl:aspect-landscape;
-    &__image {
-      @apply absolute left-0 top-0 block w-full h-full object-cover;
-    }
-    &__panel {
-      @apply relative z-50 w-full h-full;
-    }
-  }
-  .hero-panel {
-    &__container {
-      @apply ap-container h-full;
-    }
-    &__wrapper {
-      @apply w-full h-full flex justify-start items-center;
-    }
-    &__content {
-      @apply flex flex-col items-stretch py-12 gap-8 text-white md:w-[60%];
-    }
-    &__title {
-      @apply text__title-xl;
-      @media (min-width: 1024px) {
-        @apply text__title-3xl;
-      }
-    }
-    &__body {
-      @apply text__body-xl;
-    }
-  }
-}
-
-.home-about {
-  &__wrapper {
-    @apply grid grid-cols-1 md:grid-cols-3 gap-10;
-  }
-  &__content {
-    @apply md:col-span-2 flex flex-col items-stretch justify-center gap-10;
-  }
-  .about-image {
-    @apply flex flex-col justify-center;
-    &__img {
-      @apply w-full aspect-square object-contain object-center;
-      filter: drop-shadow(0px 0px 3px #858585ce);
-    }
-  }
-  &__ctas {
-    @apply flex justify-start gap-4;
-  }
-}
-
-.home-portfolio {
-  @apply bg-accent-100 shadow-sm;
-  &__wrapper {
-    @apply py-32;
-  }
-  &__content {
-    @apply flex flex-col gap-12;
-  }
-
-  &__heading {
-    .material-icons {
-      @apply text-primary-400;
-    }
-  }
-
-  &__grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7 pb-8;
-  }
-  .project {
-    @apply w-full h-auto border border-gs-100;
-    &__hitbox {
-      @apply w-full h-full bg-white shadow-md p-4 flex flex-col items-stretch gap-4;
-    }
-    &__img {
-      @apply w-full aspect-tall-landscape object-cover;
-    }
-    &__title {
-      @apply text__body;
-    }
-    &__link {
-      @apply text-accent-500 hover:text-accent-700;
-    }
-  }
-}
-
-.home-skills-container {
-  @apply shadow-md;
-}
-
-.home-skills {
-
-  &__content {
-    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-16 xl:gap-20 text-gs-700;
-  }
-
-  &__bars {
-    @apply col-span-1 xl:col-span-3 flex flex-col items-stretch gap-16;
-  }
-
-  .ap-bars {
-    @apply border-t border-b;
-  }
-
-  &__certs {
-    @apply col-span-1 xl:col-span-2;
-  }
-
-  .certs {
-    @apply flex flex-col items-stretch gap-10 py-20 lg:py-0 border-y-4 lg:border-y-0 lg:border-l border-gs-200 lg:pl-16;
-    &__grid {
-      @apply grid grid-cols-3 md:grid-cols-5 lg:grid-cols-4 opacity-40;
-      &__item {
-        img {
-          @apply w-full aspect-square object-contain object-left;
-        }
-      }
-    }
-    .cta {
-      @apply flex-1 flex flex-col justify-end;
-    }
-  }
-}
-
-.home-experience {
-  @apply bg-gradient-to-tr from-slate-900  to-accent-600 py-40 shadow-md -mt-20;
-  @screen lg {
-    /* clip-path: polygon(50% 38%, 100% 0%, 100% 100%, 0 100%, 0 0); */
-  }
-  &__content {
-    @apply flex flex-col items-stretch gap-20;
-  }
-  &__grid {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12;
-  }
-  .experience {
-    @apply bg-gs-200 rounded flex flex-col 2xl:flex-row gap-5 shadow-md;
-    &__image {
-      @apply w-full 2xl:w-2/5 aspect-tall-landscape object-cover;
-    }
-    &__info {
-      @apply flex flex-col items-stretch gap-5 text-gs-800 p-8;
-    }
-    &__name {
-      @apply text__title-md;
-    }
-    &__description {
-      @apply text__body;
-    }
-  }
-
-}

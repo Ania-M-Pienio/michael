@@ -1,0 +1,31 @@
+
+.navbar {
+    @apply pointer-events-none absolute z-[-1] top-0 right-0 flex flex-col lg:flex-row justify-end gap-y-6 gap-x-8 py-12 lg:py-0 opacity-0;
+    transition: opacity 0.7s, top 0.7s;
+    &.active {
+      @apply opacity-100 top-[150%] z-0 pointer-events-auto;
+    }
+  
+    &__link {
+      @apply btn-bones text__body-lg font-medium hover:text-accent-600 justify-end lg:justify-center;
+    }
+  }
+  
+  @screen <lg {
+    .navbar {
+      @apply pl-8 text-gs-50;
+      .navbar__link {
+        @apply text__body-2xl hover:text-accent-200;
+      }
+      .ap-bar {
+        @apply hidden;
+      }
+    }
+  }
+  @screen lg {
+    .navbar {
+      @apply static top-full pointer-events-auto;
+      display: static !important;
+      opacity: 1 !important;
+    }
+  }

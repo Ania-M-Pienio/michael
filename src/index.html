@@ -19,7 +19,7 @@
           <div class="header__logo">
             <span class="material-icons jumbo">pin</span>
             <div class="ap-bar"></div>
-            <p class="">Michael Szyszko</p>
+            <p class="text__title bold">Michael Szyszko</p>
           </div>
 
           <div class="header__nav">
@@ -31,8 +31,13 @@
             </button>
             <div class="navbar active" id="header-nav">
               <a href="#about" class="navbar__link">
-                <span class="material-icons lg"> person_add </span>
+                <span class="material-icons lg"> account_circle </span>
                 <span class="navbar__link-text">About</span>
+              </a>
+              <div class="ap-bar short"></div>
+              <a href="#skills" class="navbar__link">
+                <span class="material-icons lg">  workspace_premium </span>
+                <span class="navbar__link-text">Skills</span>
               </a>
               <div class="ap-bar short"></div>
               <a href="#portfolio" class="navbar__link">
@@ -46,7 +51,7 @@
     </header>
 
     <main class="main">
-      <section class="home-hero-section section">
+      <section class="home-hero-section">
         <div class="section__underlay"></div>
         <div class="section__underlay2"></div>
         <div class="home-hero">
@@ -140,16 +145,14 @@
         </div>
       </section>
 
-      <section class="home-about-section" data-aos="fade-up">
+      <section id="about" class="home-about-section section" data-aos="fade-up">
         <div class="home-about">
           <div class="section-container home-about__container">
             <div class="home-about__wrapper">
               <div class="home-about__content">
                 <div class="section-heading">
                   <div>
-                    <p
-                      class="text__body-over text-accent-200 text-center lg:text-left"
-                    >
+                    <p class="text__body-over text-accent-200 text-left">
                       About me
                     </p>
                     <p class="section-heading__title">Full-Stack Developer.</p>
@@ -169,13 +172,16 @@
                     <span> Resume </span>
                     <span class="material-icons"> download </span>
                   </a>
-                  <a href="https://ca.linkedin.com/in/michael-szyszko" target="_blank" rel="nofollow" class="btn-accent-lg">
+                  <a
+                    href="https://ca.linkedin.com/in/michael-szyszko"
+                    target="_blank"
+                    rel="nofollow"
+                    class="btn-accent-lg"
+                  >
                     <span> LinkedIn </span>
-                    <span class="material-icons"> dataset_linked  </span>
+                    <span class="material-icons"> dataset_linked </span>
                   </a>
-
                 </div>
-   
               </div>
               <div class="home-about__image about-image">
                 <img
@@ -188,271 +194,333 @@
           </div>
         </div>
       </section>
-    
-  
-        <section class="home-experience-section section">
-          <div class="home-experience">
-            <div class="section-container home-experience__container">
-              <div class="home-experience__wrapper">
-                <div class="home-experience__content">
-                  <div class="section-heading home-experience__heading light">
-                    <div class="ap-bar light"></div>
-                    <p class="section-heading__title">8+ Years Experience</p>
+
+      <section class="home-experience-section section">
+        <div class="home-experience">
+          <div class="section-container home-experience__container">
+            <div class="home-experience__wrapper">
+              <div class="home-experience__content">
+                <div class="section-heading home-experience__heading light">
+                  <div class="ap-bar light"></div>
+                  <p class="section-heading__title">8+ Years Experience</p>
+                </div>
+                <div class="home-experience__grid">
+                  <div class="experience" data-aos="fade-up">
+                    <img
+                      src="./assets/experience-1.jpg"
+                      alt="Experience 1"
+                      class="experience__image"
+                    />
+                    <div class="experience__info">
+                      <p class="experience__name">IBM Canada</p>
+                      <p class="experience__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam quibusdam magnam optio voluptatem possimus,
+                        voluptatibus mollitia alias iste tempore repellendus
+                        illo nulla doloremque blanditiis molestiae in sit. Nam,
+                        natus numquam.
+                      </p>
+                    </div>
                   </div>
-                  <div class="home-experience__grid">
-                    <div class="experience" data-aos="fade-up">
-                      <img src="./assets/experience-1.jpg" alt="Experience 1" class="experience__image" />
-                      <div class="experience__info">
-                        <p class="experience__name">IBM Canada</p>
-                        <p class="experience__description">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Totam quibusdam magnam optio voluptatem possimus,
-                          voluptatibus mollitia alias iste tempore repellendus
-                          illo nulla doloremque blanditiis molestiae in sit. Nam,
-                          natus numquam.
-                        </p>
-                      </div>
+                  <div class="experience" data-aos="fade-up">
+                    <img
+                      src="./assets/experience-2.jpg"
+                      alt="Experience 2"
+                      class="experience__image"
+                    />
+                    <div class="experience__info">
+                      <p class="experience__name">BDO Canada</p>
+                      <p class="experience__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam quibusdam magnam optio voluptatem possimus,
+                        voluptatibus mollitia alias iste tempore repellendus
+                        illo nulla doloremque blanditiis molestiae in sit. Nam,
+                        natus numquam.
+                      </p>
                     </div>
-                    <div class="experience" data-aos="fade-up">
-                      <img src="./assets/experience-2.jpg" alt="Experience 2" class="experience__image" />
-                      <div class="experience__info">
-                        <p class="experience__name">BDO Canada</p>
-                        <p class="experience__description">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Totam quibusdam magnam optio voluptatem possimus,
-                          voluptatibus mollitia alias iste tempore repellendus
-                          illo nulla doloremque blanditiis molestiae in sit. Nam,
-                          natus numquam.
-                        </p>
-                      </div>
+                  </div>
+                  <div class="experience" data-aos="fade-up">
+                    <img
+                      src="./assets/experience-3.jpg"
+                      alt="Experience 3"
+                      class="experience__image"
+                    />
+                    <div class="experience__info">
+                      <p class="experience__name">Elastic Path</p>
+                      <p class="experience__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam quibusdam magnam optio voluptatem possimus,
+                        voluptatibus mollitia alias iste tempore repellendus
+                        illo nulla doloremque blanditiis molestiae in sit. Nam,
+                        natus numquam.
+                      </p>
                     </div>
-                    <div class="experience" data-aos="fade-up">
-                      <img src="./assets/experience-3.jpg" alt="Experience 3" class="experience__image" />
-                      <div class="experience__info">
-                        <p class="experience__name">Elastic Path</p>
-                        <p class="experience__description">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Totam quibusdam magnam optio voluptatem possimus,
-                          voluptatibus mollitia alias iste tempore repellendus
-                          illo nulla doloremque blanditiis molestiae in sit. Nam,
-                          natus numquam.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="experience" data-aos="fade-up">
-                      <img src="./assets/experience-4.jpg" alt="Experience 4" class="experience__image" />
-                      <div class="experience__info">
-                        <p class="experience__name">SCI | Taq Automotive </p>
-                        <p class="experience__description">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Totam quibusdam magnam optio voluptatem possimus,
-                          voluptatibus mollitia alias iste tempore repellendus
-                          illo nulla doloremque blanditiis molestiae in sit. Nam,
-                          natus numquam.
-                        </p>
-                      </div>
+                  </div>
+                  <div class="experience" data-aos="fade-up">
+                    <img
+                      src="./assets/experience-4.jpg"
+                      alt="Experience 4"
+                      class="experience__image"
+                    />
+                    <div class="experience__info">
+                      <p class="experience__name">SCI | Taq Automotive</p>
+                      <p class="experience__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam quibusdam magnam optio voluptatem possimus,
+                        voluptatibus mollitia alias iste tempore repellendus
+                        illo nulla doloremque blanditiis molestiae in sit. Nam,
+                        natus numquam.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="home-skills-section section">
-          <div class="home-skills">
-            <div class="section-container home-skills__container">
-              <div class="home-skills__wrapper">
-                <div class="home-skills__content">
-                  <div class="home-skills__bars">
-                    <div class="section-heading home-skills__heading">
-                      <div class="ap-bar"></div>
-                      <p class="section-heading__title">
-                        Skills & Technologies
-                      </p>
-                    </div>
-                    <div class="home-skills__content-wrapper">
+        </div>
+      </section>
+
+      <section id="skills" class="home-skills-section section">
+        <div class="home-skills">
+          <div class="section-container home-skills__container">
+            <div class="home-skills__wrapper">
+              <div class="home-skills__content">
+                <div class="home-skills__bars">
+                  <div class="section-heading home-skills__heading">
+                    <div class="ap-bar"></div>
+                    <p class="section-heading__title">Skills & Technologies</p>
+                  </div>
+                  <div class="home-skills__content-wrapper">
+                    <div
+                      class="ap-bars"
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-in-sine"
+                      data-aos-offset="200"
+                    >
                       <div
-                        class="ap-bars"
-                        data-aos="zoom-in"
-                        data-aos-easing="ease-in-sine"
-                        data-aos-offset="200"
+                        class="ap-bars__item"
+                        data-percent="83"
+                        data-value="83%"
                       >
-                        <div
-                          class="ap-bars__item"
-                          data-percent="83"
-                          data-value="83%"
-                        >
-                          <p class="ap-bars__title">javascript</p>
-                          <div class="ap-bars__item-wrapper">
-                            <div class="ap-bars__bar bar">
-                              <span class="bar__value"></span>
-                            </div>
+                        <p class="ap-bars__title">javascript</p>
+                        <div class="ap-bars__item-wrapper">
+                          <div class="ap-bars__bar bar">
+                            <span class="bar__value"></span>
                           </div>
                         </div>
-                        <div
-                          class="ap-bars__item"
-                          data-percent="95"
-                          data-value="95%"
-                        >
-                          <p class="ap-bars__title">c#</p>
-                          <div class="ap-bars__item-wrapper">
-                            <div class="ap-bars__bar bar">
-                              <span class="bar__value"></span>
-                            </div>
+                      </div>
+                      <div
+                        class="ap-bars__item"
+                        data-percent="95"
+                        data-value="95%"
+                      >
+                        <p class="ap-bars__title">c#</p>
+                        <div class="ap-bars__item-wrapper">
+                          <div class="ap-bars__bar bar">
+                            <span class="bar__value"></span>
                           </div>
                         </div>
-                        <div
-                          class="ap-bars__item"
-                          data-percent="78"
-                          data-value="78%"
-                        >
-                          <p class="ap-bars__title">python</p>
-                          <div class="ap-bars__item-wrapper">
-                            <div class="ap-bars__bar bar">
-                              <span class="bar__value"></span>
-                            </div>
+                      </div>
+                      <div
+                        class="ap-bars__item"
+                        data-percent="78"
+                        data-value="78%"
+                      >
+                        <p class="ap-bars__title">python</p>
+                        <div class="ap-bars__item-wrapper">
+                          <div class="ap-bars__bar bar">
+                            <span class="bar__value"></span>
                           </div>
                         </div>
-                        <div
-                          class="ap-bars__item"
-                          data-percent="98"
-                          data-value="98%"
-                        >
-                          <p class="ap-bars__title">sql</p>
-                          <div class="ap-bars__item-wrapper">
-                            <div class="ap-bars__bar bar">
-                              <span class="bar__value"></span>
-                            </div>
+                      </div>
+                      <div
+                        class="ap-bars__item"
+                        data-percent="98"
+                        data-value="98%"
+                      >
+                        <p class="ap-bars__title">sql</p>
+                        <div class="ap-bars__item-wrapper">
+                          <div class="ap-bars__bar bar">
+                            <span class="bar__value"></span>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <a
+                    href="https://ca.linkedin.com/in/michael-szyszko"
+                    class="btn-primary-lg text-gs-50"
+                  >
+                    <span class="material-icons"> dataset_linked </span>
+                    <p class="">View Education</p>
+                  </a>
+                </div>
+                <div
+                  class="home-skills__certs certs"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-offset="200"
+                >
+                  <div class="section-heading home-skills__heading">
+                    <p class="w-full text__body-over text-primary-500">
+                      Certs & Lisc.
+                    </p>
+                  </div>
+                  <div class="certs__grid">
+                    <div class="certs__item">
+                      <img src="./assets/cert-1.png" alt="Certificate 1" />
+                    </div>
+                    <div class="certs__item">
+                      <img src="./assets/cert-2.png" alt="Certificate 1" />
+                    </div>
+                    <div class="certs__item">
+                      <img src="./assets/cert-3.png" alt="Certificate 1" />
+                    </div>
+                    <div class="certs__item">
+                      <img src="./assets/cert-4.png" alt="Certificate 1" />
+                    </div>
+                    <div class="certs__item">
+                      <img src="./assets/cert-5.png" alt="Certificate 1" />
+                    </div>
+                    <div class="certs__item">
+                      <img src="./assets/cert-6.png" alt="Certificate 1" />
+                    </div>
+                    <div class="certs__item">
+                      <img src="./assets/cert-7.png" alt="Certificate 1" />
+                    </div>
+                  </div>
+                  <div class="cta">
                     <a
                       href="https://ca.linkedin.com/in/michael-szyszko"
                       class="btn-primary-lg text-gs-50"
                     >
-                    <span class="material-icons"> dataset_linked  </span>
-                      <p class="">View Education</p>
+                      <span class="material-icons"> dataset_linked </span>
+                      <p class="">Details</p>
                     </a>
                   </div>
-                  <div
-                    class="home-skills__certs certs"
-                    data-aos="fade-left"
-                    data-aos-easing="ease-in-sine"
-                    data-aos-offset="200"
-                  >
-                    <div class="section-heading home-skills__heading">
-                      <p class="w-full text__body-over text-primary-500">
-                        Certs & Lisc.
-                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="home-portfolio-section section">
+        <div class="home-portfolio">
+          <div class="section-container home-portfolio__container">
+            <div class="home-portfolio__wrapper">
+              <div class="home-portfolio__content">
+                <div class="section-heading home-portfolio__heading">
+                  <span class="material-icons jumbo">
+                    photo_size_select_large
+                  </span>
+                  <div class="ap-bar"></div>
+                  <p class="section-heading__title">Sample my work</p>
+                </div>
+
+                <div class="home-portfolio__grid" data-aos="fade-up">
+                  <div class="project">
+                    <div class="project__hitbox">
+                      <img
+                        src="./assets/landscape-2.jpg"
+                        class="project__img"
+                        alt="Project One"
+                      />
+                      <p class="project__title">Project One</p>
+                      <a href="/" class="btn-bones project__link">View</a>
                     </div>
-                    <div class="certs__grid">
-                      <div class="certs__item">
-                        <img src="./assets/cert-1.png" alt="Certificate 1" />
-                      </div>
-                      <div class="certs__item">
-                        <img src="./assets/cert-2.png" alt="Certificate 1" />
-                      </div>
-                      <div class="certs__item">
-                        <img src="./assets/cert-3.png" alt="Certificate 1" />
-                      </div>
-                      <div class="certs__item">
-                        <img src="./assets/cert-4.png" alt="Certificate 1" />
-                      </div>
-                      <div class="certs__item">
-                        <img src="./assets/cert-5.png" alt="Certificate 1" />
-                      </div>
-                      <div class="certs__item">
-                        <img src="./assets/cert-6.png" alt="Certificate 1" />
-                      </div>
-                      <div class="certs__item">
-                        <img src="./assets/cert-7.png" alt="Certificate 1" />
-                      </div>
+                  </div>
+                  <div class="project">
+                    <div class="project__hitbox">
+                      <img
+                        src="./assets/landscape-3.jpg"
+                        class="project__img"
+                        alt="Project Two"
+                      />
+                      <p class="project__title">Project Two</p>
+                      <a href="/" class="btn-bones project__link">View</a>
                     </div>
-                    <div class="cta">
-                      <a
-                        href="https://ca.linkedin.com/in/michael-szyszko"
-                        class="btn-primary-lg text-gs-50"
-                      >
-                        <span class="material-icons"> dataset_linked  </span>
-                        <p class="">Details</p>
-                      </a>
+                  </div>
+                  <div class="project">
+                    <div class="project__hitbox">
+                      <img
+                        src="./assets/landscape-1.jpg"
+                        class="project__img"
+                        alt="Project Three"
+                      />
+                      <p class="project__title">Project Three</p>
+                      <a href="/" class="btn-bones project__link">View</a>
+                    </div>
+                  </div>
+                  <div class="project">
+                    <div class="project__hitbox">
+                      <img
+                        src="./assets/tech2.jpg"
+                        class="project__img"
+                        alt="Project Four"
+                      />
+                      <p class="project__title">Project Four</p>
+                      <a href="/" class="btn-bones project__link">View</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="home-portfolio-section section">
-          <div class="home-portfolio">
-            <div class="section-container home-portfolio__container">
-              <div class="home-portfolio__wrapper">
-                <div class="home-portfolio__content">
-                  <div class="section-heading home-portfolio__heading">
-                    <span class="material-icons jumbo">
-                      photo_size_select_large
-                    </span>
-                    <div class="ap-bar"></div>
-                    <p class="section-heading__title">Sample my work</p>
-                  </div>
-
-                  <div class="home-portfolio__grid" data-aos="fade-up">
-                    <div class="project">
-                      <div class="project__hitbox">
-                        <img
-                          src="./assets/landscape-2.jpg"
-                          class="project__img"
-                          alt="Project One"
-                        />
-                        <p class="project__title">Project One</p>
-                        <a href="/" class="btn-bones project__link">View</a>
-                      </div>
-                    </div>
-                    <div class="project">
-                      <div class="project__hitbox">
-                        <img
-                          src="./assets/landscape-3.jpg"
-                          class="project__img"
-                          alt="Project Two"
-                        />
-                        <p class="project__title">Project Two</p>
-                        <a href="/" class="btn-bones project__link">View</a>
-                      </div>
-                    </div>
-                    <div class="project">
-                      <div class="project__hitbox">
-                        <img
-                          src="./assets/landscape-1.jpg"
-                          class="project__img"
-                          alt="Project Three"
-                        />
-                        <p class="project__title">Project Three</p>
-                        <a href="/" class="btn-bones project__link">View</a>
-                      </div>
-                    </div>
-                    <div class="project">
-                      <div class="project__hitbox">
-                        <img
-                          src="./assets/tech2.jpg"
-                          class="project__img"
-                          alt="Project Four"
-                        />
-                        <p class="project__title">Project Four</p>
-                        <a href="/" class="btn-bones project__link">View</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-    
-
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+
+      <div class="footer__content">
+
+        <div class="footer__container">
+
+          <div class="footer__grid">
+
+            <div class="footer-section">
+              <p class="footer-section__title">
+                <span class="ap-bar"></span>
+                Contact
+              </p>
+              <div class="footer-section__content">
+                <a href="/" class="footer__link">Email</a>
+                <a href="/" class="footer__link">LinkedIn</a>
+                <a href="/" class="footer__link">Facebook</a>
+                <a href="/" class="footer__link">Medium?</a>
+              </div>
+            </div>
+            <div class="footer-section">
+              <p class="footer-section__title">
+                <span class="ap-bar"></span>
+                Interests
+              </p>
+              <div class="footer-section__content">
+                <a href="/" class="footer__link">Link to Unity Games</a>
+                <a href="/" class="footer__link">Link to an Event</a>
+                <a href="/" class="footer__link">Link to Social Club</a>
+                <a href="/" class="footer__link">Link to Charity</a>
+              </div>
+
+            </div>
+            <div class="footer-section">
+              <p class="footer-section__title">
+                <span class="ap-bar"></span>
+                Send me a message
+              </p>
+        
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    
+    </footer>
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

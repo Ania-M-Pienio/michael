@@ -1,0 +1,18 @@
+.home-about {
+  &__wrapper {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-12;
+  }
+  &__content {
+    @apply md:col-span-2 flex flex-col items-stretch justify-center gap-10;
+  }
+  .about-image {
+    @apply flex flex-col justify-center;
+    &__img {
+      @apply w-full aspect-square object-contain object-center;
+      filter: drop-shadow(0px 0px 3px #858585ce);
+    }
+  }
+  &__ctas {
+    @apply flex justify-start gap-4;
+  }
+}

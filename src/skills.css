@@ -1,0 +1,97 @@
+.ap-bars {
+  @apply flex flex-col justify-start items-stretch gap-6 py-8;
+  &__item {
+    @apply flex justify-start gap-8 items-center;
+  }
+
+  &__item-wrapper {
+    @apply border border-gs-200 w-[75%] lg:w-[72%] xl:w-[78%];
+  }
+  &__bar {
+    @apply px-4 flex items-center relative h-[40px];
+  }
+  &__title {
+    @apply flex-1 text__body-sm uppercase;
+    @screen xl {
+      @apply text__body-lg;
+    }
+  }
+  .bar {
+    @apply bg-gradient-to-r from-secondary-500 to-fuchsia-300;
+    &__value {
+      @apply text-gs-50 text__body font-bold;
+    }
+  }
+}
+
+.home-portfolio-section {
+  @apply bg-accent-100 shadow-sm;
+}
+
+.home-portfolio {
+  &__content {
+    @apply flex flex-col gap-12;
+  }
+
+  &__heading {
+    .material-icons {
+      @apply text-primary-400;
+    }
+  }
+
+  &__grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7 pb-8;
+  }
+  .project {
+    @apply w-full h-auto border border-gs-100;
+    &__hitbox {
+      @apply w-full h-full bg-white shadow-md p-4 flex flex-col items-stretch gap-4;
+    }
+    &__img {
+      @apply w-full aspect-tall-landscape object-cover;
+    }
+    &__title {
+      @apply text__body;
+    }
+    &__link {
+      @apply text-accent-500 hover:text-accent-700;
+    }
+  }
+}
+
+.home-skills-container {
+  @apply shadow-md;
+}
+
+.home-skills {
+  &__content {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-16 xl:gap-20 text-gs-700;
+  }
+
+  &__bars {
+    @apply col-span-1 xl:col-span-3 flex flex-col items-stretch gap-16;
+  }
+
+  .ap-bars {
+    @apply border-t border-b;
+  }
+
+  &__certs {
+    @apply col-span-1 xl:col-span-2;
+  }
+
+  .certs {
+    @apply flex flex-col items-stretch gap-10 py-20 lg:py-0 border-y-4 lg:border-y-0 lg:border-l border-gs-200 lg:pl-16;
+    &__grid {
+      @apply grid grid-cols-3 md:grid-cols-5 lg:grid-cols-4 opacity-40;
+      &__item {
+        img {
+          @apply w-full aspect-square object-contain object-left;
+        }
+      }
+    }
+    .cta {
+      @apply flex-1 flex flex-col justify-end;
+    }
+  }
+}
