@@ -40,7 +40,7 @@
   }
 
   &__grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7 pb-8;
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-7 pb-8;
   }
   .project {
     @apply w-full h-auto border border-gs-100;
@@ -51,10 +51,13 @@
       @apply w-full aspect-tall-landscape object-cover;
     }
     &__title {
-      @apply text__body;
+      @apply text__title-sm;
     }
     &__link {
       @apply text-accent-500 hover:text-accent-700;
+    }
+    &__skills {
+      @apply flex flex-row gap-2 flex-wrap;
     }
   }
 }

@@ -30,8 +30,9 @@ $('.home-hero__slider').slick({
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
+    adaptiveHeight: true,
   });
 
 

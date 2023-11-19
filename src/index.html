@@ -17,7 +17,7 @@
       <div class="header__content">
         <div class="header__container">
           <div class="header__logo">
-            <span class="material-icons jumbo">pin</span>
+            <span class="material-icons jumbo">camera</span>
             <div class="ap-bar"></div>
             <p class="text__title bold">Michael Szyszko</p>
           </div>
@@ -29,7 +29,7 @@
             >
               <span class="material-icons xl"> menu_open </span>
             </button>
-            <div class="navbar active" id="header-nav">
+            <div class="navbar" id="header-nav">
               <a href="#about" class="navbar__link">
                 <span class="material-icons lg"> account_circle </span>
                 <span class="navbar__link-text">About</span>
@@ -57,7 +57,7 @@
         <div class="home-hero">
           <div class="home-hero__container">
             <div class="home-hero__wrapper">
-              <div class="home-hero__slider">
+              <div class="home-hero__slider slides-adaptive-height">
                 <!-- SLIDE ONE -->
                 <div class="hero-slide">
                   <img
@@ -265,7 +265,7 @@
                     photo_size_select_large
                   </span>
                   <div class="ap-bar"></div>
-                  <p class="section-heading__title">Projects</p>
+                  <p class="section-heading__title">Sample Projects</p>
                 </div>
 
                 <div class="home-portfolio__grid" data-aos="fade-up">
@@ -277,7 +277,13 @@
                         alt="Project One"
                       />
                       <p class="project__title">Debt Calculator</p>
-                      <p>Python, JavaScript, Flask, SQL Application deployed on Azure </p>
+                      <div class="project__skills"> 
+                          <div class="btn-chip-2">Python</div> 
+                          <div class="btn-chip-2">JavaScript</div>
+                          <div class="btn-chip-2">Flask</div> 
+                          <div class="btn-chip-2">SQL</div>
+                          <div class="btn-chip-2">Azure Deployed</div>
+                      </div>
                       <p>Users input their debts represented by a debt amount (i.e., principal) with an annual percentage rate (APR) and a minimum payment that the issuer requires. The tool will provide a table that displays every debt and the remaining balance for every month.</p>
                       <a href="https://debt-calculator.azurewebsites.net/register" class="btn-bones project__link">Deployed on Azure</a>
                       <a href="https://youtu.be/5Z7m-qq6jb4" class="btn-bones project__link">YouTube Demo</a>
@@ -292,10 +298,15 @@
                         alt="Project Two"
                       />
                       <p class="project__title">Inventory Management</p>
-                      <p>GScript/AppScript (similar to JavaScript), AppSheet, Offline mode </p>
+                      <div class="project__skills"> 
+                        <div class="btn-chip-2">AppSheet</div> 
+                        <div class="btn-chip-2">GScript</div> 
+                        <div class="btn-chip-2">AppScript</div> 
+                        <div class="btn-chip-2">Offline Mode</div> 
+                      </div>
                       <p>In 2019 a family member with a small business approached me with a problem.  They sold showers, vanities, and a few other things. The problem was they didn’t have a good way to keep track inventory. They were fine when they only had one warehouse that was physically located in the show room store. However, the business was growing and they now had an out of store warehouse with plans in the future to potentially have additional warehouses.</p>
                       <p>The script makes the SpreadSheets behave like a transactional database, when a user does any stocking, such as adding or removing items, it creates a stocking line item, that then transactionally updates a master inventory table that can be easily referenced from the Google Spreadsheet UI or from the AppSheet App There are a few other things the script does such as send e-mail alerts based on certain stocking levels</p>
-                      <p>This solution is still in use today, and helping stock thousdands of items every year</p>
+                      <p>This solution is still in use today, and helping stock thousdands of items every year!</p>
                       <a href="https://youtu.be/Zm0qIuZClDM" class="btn-bones project__link">YouTube Demo</a>
                       <a href="https://github.com/michael-szyszko/inventory-management" class="btn-bones project__link">GitHub</a>
                     </div>

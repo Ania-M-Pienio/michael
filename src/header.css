@@ -1,13 +1,13 @@
 .header {
     @apply w-full max-w-[100vw] relative z-10;
     &__content {
-      @apply w-full h-auto text-gs-700 py-6 bg-white;
+      @apply w-full h-auto text-gs-700 py-6 bg-white relative;
     }
     &__container {
-      @apply ap-container flex items-center justify-between gap-4 xl:gap-12;
+      @apply ap-container flex items-center justify-between flex-wrap gap-4 xl:gap-12;
     }
     &__nav {
-      @apply relative flex justify-end;
+      @apply flex justify-end;
     }
     &__nav-toggle {
       @apply block lg:hidden hover:text-accent-600;

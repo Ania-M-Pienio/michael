@@ -76,6 +76,9 @@
     }
     &__body-sm {
       @apply font-sans text-sm font-normal;
+      &.strong {
+        @apply font-bold;
+      }
     }
     &__body-lg {
       @apply font-sans text-lg font-normal;
@@ -173,7 +176,13 @@
   .btn-chip {
     @apply min-w-[130px] bg-accent-100 hover:bg-slate-300 text__body-lg text-gs-800 px-6 py-4 flex items-center justify-center gap-3 rounded-full ;
     &.dark {
-      @apply bg-slate-700 hover:bg-slate-600 text__body-lg text-gs-50;
+      @apply bg-gs-700 hover:bg-gs-600 text__body-lg text-gs-50;
+    }
+  }
+  .btn-chip-2 {
+    @apply text__body-xs min-w-[80px] bg-gs-50 text-gs-700 hover:bg-gs-700 border border-gs-200 hover:text-gs-50 px-2 py-1 flex items-center justify-center gap-3 rounded-full ;
+    &.dark {
+      @apply bg-gs-700 hover:bg-gs-50 text__body-lg text-gs-50 hover:text-gs-700;
     }
   }
 }
@@ -226,18 +235,6 @@ body {
 }
 html{scroll-behavior:smooth}
 
-.slick-slider {
-  overflow: hidden;
-  .slick-slide > div {
-    line-height: 0;
-  }
-}
-
-.slick-slider .slick-track {
-  display: flex;
-}
-
-
 .main {
   @apply flex flex-col items-stretch overflow-hidden;
 }
@@ -249,11 +246,11 @@ html{scroll-behavior:smooth}
     @apply absolute top-0 left-0 z-[-1] w-full h-full;
   }
   &__underlay {
-    @apply bg-secondary-200;
+    @apply bg-secondary-900;
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 60% 100%, 0 80%);
   }
   &__underlay2 {
-    @apply bg-primary-200;
+    @apply bg-primary-900;
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 40% 100%, 0 80%);
   }
 }

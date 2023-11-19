@@ -1,6 +1,10 @@
 .home-hero-section {
   @apply xl:mb-40;
   filter: drop-shadow(0px 0px 3px #858585d0);
+
+  .section__underlay, .section__underlay2 {
+    @apply hidden lg:block;
+  }
 }
 
 .home-hero {
@@ -33,7 +37,7 @@
   }
 
   .hero-slide {
-    @apply relative w-full h-auto max-h-[80vh] aspect-portrait sm:aspect-short-portrait lg:aspect-tall-landscape 3xl:aspect-landscape;
+    @apply relative w-full h-auto py-20 lg:py-0 lg:aspect-tall-landscape 3xl:aspect-landscape;
     &__image {
       @apply absolute left-0 top-0 block w-full h-full object-cover;
     }
@@ -61,4 +65,34 @@
       @apply text__body-xl;
     }
   }
+}
+
+/* Slider */
+
+.slick-slider {
+  overflow: hidden;
+  .slick-slide > div {
+    line-height: 0;
+  }
+}
+
+.slick-slider .slick-track {
+  display: flex;
+}
+
+.slides-adaptive-height .slick-track {
+  @apply flex items-start;
+  height: auto !important;
+}
+
+.slides-adaptive-height .slick-slide {
+  @apply inline-block;
+  height: auto !important;
+}
+
+.slides-adaptive-height .slick-slide > div,
+.slides-adaptive-height .slick-slide > div > div {
+  @apply  w-full;
+  height: auto !important;
+  line-height: 0 !important;
 }
